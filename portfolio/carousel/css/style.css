@@ -1,0 +1,83 @@
+body {
+	position: relative;
+	background-color: #e9e9e9;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+button {
+	position: absolute;
+	background-color: rgba(68, 68, 68, 0.5);
+	border: none;
+	width: 40px;
+	height: 40px;
+	top: 42%;
+	cursor: pointer;
+	transition: 0.5s;
+	color: transparent;
+}
+button:hover {
+	background-color: rgba(68, 68, 68, 0.7);
+}
+button:hover i {
+	color: rgba(255, 255, 255, 0.9);
+}
+#btn-right {
+	right: 0;
+}
+i {
+	margin-top: 2px;
+	color: rgba(255, 255, 255, 0.7);
+}
+#carousel {
+	width: 400px;
+	height: 200px;
+	border: 2px solid #444444;
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+ul {
+	width: 5000px;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	width: 400px;
+	height: 200px;
+	list-style: none;
+	float: left;
+	left: 50%;
+}
+.indicators {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	padding: 0 0 10px 0;
+	width: 90px;
+	position: absolute;
+	list-style: none;
+	bottom: 0;
+}
+.indicators li {
+	margin: 0 2px 0 2px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #ffffff;
+	border-radius: 12px;
+}
+.indicators .active {
+	width: 12px;
+	height: 12px;
+	background-color: #ffffff;
+} 

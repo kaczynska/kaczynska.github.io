@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tytuł mojej strony</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Page1</a></li>
+						<li><a href="#">Page2</a></li>
+						<li><a href="#">Page3</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="maincarousel">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			      <li data-target="#myCarousel" data-slide-to="4"></li>
+			    </ol>
+			    <div class="carousel-inner" role="listbox">
+				  <div class="item active carousel-example-1">
+					<div class="container carousel2-txt col-md-12">
+						<h1 class="mainheader">Hero 1</h1>
+						<small class="mainsmall">Lorem ipsum dolor</small>
+						<button class="mainbtn">Primary</button>
+					</div>
+				  </div>
+				  <div class="item carousel-example-2">
+				  	<div class="container carousel2-txt col-md-12">
+						<h1 class="mainheader">Hero 2</h1>
+						<small class="mainsmall">Lorem ipsum dolor</small>
+						<button class="mainbtn">Primary</button>
+					</div>
+				  </div>
+				  <div class="item carousel-example-3">
+				  	<div class="container carousel2-txt col-md-12">
+						<h1 class="mainheader">Hero 3</h1>
+						<small class="mainsmall">Lorem ipsum dolor</small>
+						<button class="mainbtn">Primary</button>
+					</div>
+				  </div>
+				  <div class="item carousel-example-4">
+				  	<div class="container carousel2-txt col-md-12">
+						<h1 class="mainheader">Hero 4</h1>
+						<small class="mainsmall">Lorem ipsum dolor</small>
+						<button class="mainbtn">Primary</button>
+					</div>
+				  </div>
+				  <div class="item carousel-example-5">
+				  	<div class="container carousel2-txt col-md-12">
+						<h1 class="mainheader">Hero 5</h1>
+						<small class="mainsmall">Lorem ipsum dolor</small>
+						<button class="mainbtn">Primary</button>
+					</div>
+				  </div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<section class="maintabs">
+			<div class="container">
+				<ul class="nav nav-tabs nav-justified">
+				  <li class="active maintabs-a-active"><a class="maintabs-a" href="#hobby1" data-toggle="tab">Hoby 1</a></li>
+				  <li><a href="#hobby2" class="maintabs-a" data-toggle="tab">Hoby 2</a></li>
+				  <li><a href="#hobby3" class="maintabs-a" data-toggle="tab">Hoby 3</a></li>
+				  <li><a href="#hobby4" class="maintabs-a" data-toggle="tab">Hoby 4</a></li>
+				  <div class="tab-content">
+				  	<div id="hobby1" class="tab-pane fade in active">
+				  		<h3>Hobby 1</h3>
+    					<p>Nunc ultrices ullamcorper urna. Sed ac augue massa. Integer varius nibh orci, nec malesuada enim ultrices eget. Aliquam malesuada tellus iaculis ex faucibus volutpat. Nullam aliquam ultrices justo, vitae condimentum erat tristique ac. Sed tincidunt nisi non arcu vulputate, quis consequat lectus suscipit. Phasellus porta leo molestie ex vehicula porta. Donec lobortis purus eget justo varius, in dignissim purus dapibus. Sed aliquet lectus eget ex mollis dictum. Vivamus sem lorem, porta eget nulla pharetra, eleifend rutrum lectus. Nam molestie sem ut sapien molestie, non tempus sem finibus. Maecenas et lectus non leo vestibulum mollis a at ipsum. Vivamus varius orci vitae nibh ornare, ut fringilla ante condimentum.</p>
+				  	</div>
+				  	<div id="hobby2" class="tab-pane fade">
+				  		<h3>Hobby 2</h3>
+    					<p>Nunc ultrices ullamcorper urna. Sed ac augue massa. Integer varius nibh orci, nec malesuada enim ultrices eget. Aliquam malesuada tellus iaculis ex faucibus volutpat. Nullam aliquam ultrices justo, vitae condimentum erat tristique ac. Sed tincidunt nisi non arcu vulputate, quis consequat lectus suscipit. Phasellus porta leo molestie ex vehicula porta. Donec lobortis purus eget justo varius, in dignissim purus dapibus. Sed aliquet lectus eget ex mollis dictum. Vivamus sem lorem, porta eget nulla pharetra, eleifend rutrum lectus. Nam molestie sem ut sapien molestie, non tempus sem finibus. Maecenas et lectus non leo vestibulum mollis a at ipsum. Vivamus varius orci vitae nibh ornare, ut fringilla ante condimentum.</p>
+				  	</div>
+				  	<div id="hobby3" class="tab-pane fade">
+				  		<h3>Hobby 4</h3>
+    					<p>Nunc ultrices ullamcorper urna. Sed ac augue massa. Integer varius nibh orci, nec malesuada enim ultrices eget. Aliquam malesuada tellus iaculis ex faucibus volutpat. Nullam aliquam ultrices justo, vitae condimentum erat tristique ac. Sed tincidunt nisi non arcu vulputate, quis consequat lectus suscipit. Phasellus porta leo molestie ex vehicula porta. Donec lobortis purus eget justo varius, in dignissim purus dapibus. Sed aliquet lectus eget ex mollis dictum. Vivamus sem lorem, porta eget nulla pharetra, eleifend rutrum lectus. Nam molestie sem ut sapien molestie, non tempus sem finibus. Maecenas et lectus non leo vestibulum mollis a at ipsum. Vivamus varius orci vitae nibh ornare, ut fringilla ante condimentum.</p>
+				  	</div>
+				  	<div id="hobby4" class="tab-pane fade">
+				  		<h3>Hobby 4</h3>
+    					<p>Nunc ultrices ullamcorper urna. Sed ac augue massa. Integer varius nibh orci, nec malesuada enim ultrices eget. Aliquam malesuada tellus iaculis ex faucibus volutpat. Nullam aliquam ultrices justo, vitae condimentum erat tristique ac. Sed tincidunt nisi non arcu vulputate, quis consequat lectus suscipit. Phasellus porta leo molestie ex vehicula porta. Donec lobortis purus eget justo varius, in dignissim purus dapibus. Sed aliquet lectus eget ex mollis dictum. Vivamus sem lorem, porta eget nulla pharetra, eleifend rutrum lectus. Nam molestie sem ut sapien molestie, non tempus sem finibus. Maecenas et lectus non leo vestibulum mollis a at ipsum. Vivamus varius orci vitae nibh ornare, ut fringilla ante condimentum.</p>
+				  	</div>
+				  </div>
+				</ul>
+			</div>
+		</section>
+		<div class="container modal-center">
+			<button type="button" class="mainmodal-btn" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4>Modal header</h4>
+						</div>
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sequi, hic iure, laboriosam in sapiente obcaecati distinctio fuga. Nam in facilis facere quaerat repudiandae porro, dolore explicabo nisi atque nesciunt.</p>
+						</div>
+						<div class="modal-footer">
+							<p>Some text in the footer</p>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="maingallery">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 example-1"></div>
+				<div class="col-md-3 col-sm-6 col-xs-12 example-2"></div>
+				<div class="col-md-3 col-sm-6 col-xs-12 example-3"></div>
+				<div class="col-md-3 col-sm-6 col-xs-12 example-4"></div>
+			</div>
+		</section>
+		<div class="media mainmedia">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+					    <div class="media-top" align="center">
+					        <a href="#">
+					            <img class="media-object mainmediatop" src="http://placehold.it/120x120" alt="place">
+					        </a>
+					    </div>
+					    <div class="media-body media-middle">
+					        <h4 class="media-heading mainh4">Media heading</h4>
+					        <p class="mainp">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    </div>
+					    <nav aria-label="Page navigation">
+							<ul class="pagination">
+						    	<li class="maincolor">
+						      		<a href="#" aria-label="Previous">
+						        		<span aria-hidden="true">&laquo;</span>
+						      		</a>
+						    	</li>
+						    	<li><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">4</a></li>
+							    <li><a href="#">5</a></li>
+							    <li>
+						      		<a href="#" aria-label="Next">
+						        		<span aria-hidden="true">&raquo;</span>
+						      		</a>
+						    	</li>
+						  	</ul>
+						</nav>
+				    </div>
+			   </div>
+		    </div>
+		</div>
+		<div class="container maintable">
+			<div class="row">
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>A</th>
+							<th>B</th>
+							<th>C</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>a1</th>
+							<th>a2</th>
+							<th>a3</th>
+						</tr>
+						<tr>
+							<th>b1</th>
+							<th>b2</th>
+							<th>b3</th>
+						</tr>
+						<tr>
+							<th>c1</th>
+							<th>c2</th>
+							<th>c3</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="mainthumbnails">
+			<div class="container">
+			    <div class="row">
+			        <div class="col-xs-6 col-md-3 mainnails"><img src="http://placehold.it/300x300" alt="" class="img-responsive img-thumbnail"></div>
+			        <div class="col-xs-6 col-md-3 mainnails"><img src="http://placehold.it/300x300" alt="" class="img-responsive img-thumbnail"></div>
+			        <div class="col-xs-6 col-md-3 mainnails"><img src="http://placehold.it/300x300" alt="" class="img-responsive img-thumbnail"></div>
+			        <div class="col-xs-6 col-md-3 mainnails"><img src="http://placehold.it/300x300" alt="" class="img-responsive img-thumbnail"></div>
+			    </div>
+			</div>
+		</div>
+		<div class="container">
+			<form class="mainform">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<p>e-mail:</p>
+						<input type="email" name="email" placeholder="przykladowy.adres@example.com" class="maininputemail">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p>Imię:</p>
+						<input type="text" name="name" placeholder="Jan" class="maininputname"><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+					 	<textarea name="InputMessage" id="InputMessage" class="form-control maininputmessage" rows="5" required placeholder="Przykładowy tekst..."></textarea><br>
+					 	<input type="submit" value="Submit" class="submit1">
+				 	</div>
+			 	</div>
+			</form>
+			
+		</div>
+	</body>
+</html>
