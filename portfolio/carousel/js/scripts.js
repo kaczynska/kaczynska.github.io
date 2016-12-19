@@ -1,61 +1,64 @@
 var carouselList;
 
 $(function(){
-	carouselList = $("#carousel ul");
 
-	var currentSlide = 0;
-	var offset = $("#carousel ul li").first().width();
-	var numberOfElems = $("#carousel ul li").length;
-
-	function prevSlide() {
-		currentSlide = (currentSlide-1)%numberOfElems;
-
-		if (currentSlide < 0) {
-			currentSlide = numberOfElems-1;
-		}
-
-		changeSlide();
-	}
-
-	function nextSlide() {
-		currentSlide = (currentSlide+1)%numberOfElems;
-		changeSlide();
-	}
-
-	// function changeOrder() {
-	// 	$(this)
-	// 		.find("li:last")
-	// 		.after($(this).find("li:first"));
-	//
-	// 	$(this)
-	// 		.css({marginLeft:0});
-	// }
+	var $carouselList = $("#carousel ul"),
+		$dots = $(".indicators li"),
+		carouselLength = $carouselList.find('li').length,
+		offset = -400,
+		currentSlide = 0;
 
 	function changeSlide() {
-		carouselList
-			.animate({
-				'marginLeft': -(currentSlide * offset)
-			},
-			500);
 
-			console.log('currentSlide')
-			console.log(currentSlide)
-			//$('.dots').addClass()
+	if (carouselLength > 1)
+		updateDots();
+
+	$carouselList.animate({'marginLeft': currentSlide * offset}, 1000);
 	}
 
-	//kliknięcie w lewy przycik
-	$("#btn-left")
-		.on("click", function(event) {
-				prevSlide();
+	function updateDots() {
+		$dots
+			.removeClass('active')
+			.eq(currentSlide)
+			.addClass('active');
+	}
+
+	function next() {
+		currentSlide = (currentSlide + 1)%carouselLength;
+	}
+
+	function prev() {
+		currentSlide = (currentSlide - 1)%carouselLength;
+
+		if (currentSlide < 0) {
+			currentSlide = carouselLength - 1;
+		}
+	}
+
+	setInterval(function(){
+		next();
+		changeSlide();
+	}, 2000); //co 3 sek. wykona funkcję zmieniającą slajd
+
+	//dodaj klikniecie na dotsy
+	$dots.each(function(){
+		$(this).on("click", function(event) {
+			currentSlide = $(this).data('slide-to');
+			changeSlide();
 		});
+	});
+
+	//kliknięcie w lewy przycik
+	$("#btn-left").on("click", function(event) {
+		prev();
+		changeSlide();
+	});
 
 	//kliknięcie w prawy przycik
-	$("#btn-right")
-		.on("click", function(event) {
-			nextSlide();
-		});
-
-	setInterval(nextSlide, 5000); //co 3 sek. wykona funkcję zmieniającą slajd
+	$("#btn-right").on("click", function(event) {
+		next();
+		changeSlide();
+	});
 
 	//przypisanie
 });
